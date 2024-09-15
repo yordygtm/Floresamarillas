@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(img/rakanyxayah.jpg);
+}
+h1, h2{
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+h1{
+    color: aliceblue;
+    font-size: 200px;
+    animation: pulse 2s infinite; 
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+   
+}
+h2{
+    color: aliceblue;
+    font-size: 200px;
+    animation: pulse 2s infinite; 
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    
+} 
+
+
+button{
+     background-color: blueviolet;
+  color: rgb(255, 255, 255); 
+    border-radius: 20px;
+    width: 400px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+button:hover{
+    background-color: rgb(154, 46, 255);
+    transform:scale(115%);
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+    body{
+        background-image: url(img/cel.jpg);
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
